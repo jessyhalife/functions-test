@@ -1,7 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default function handler(req, res) {
-    console.log("hola from goodbye")
+    const timestamp = req.body.timestamp
+    console.log("goodbye from", timestamp)
     setTimeout(() => {
         res.status(401).json({ status: "goodbye"})
     }, 6000)
