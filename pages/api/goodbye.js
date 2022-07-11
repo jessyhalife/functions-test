@@ -2,7 +2,8 @@
 
 export default function handler(req, res) {
     console.log("hola from goodbye")
-    res.status(401).json({ status: "goodbye"})
-    
+    setTimeout(() => {
+        res.status(401).json({ status: "goodbye"})
+    }, 6000)
   }
   
