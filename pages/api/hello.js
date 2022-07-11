@@ -3,6 +3,8 @@
 export default function handler(req, res) {
   res.status(200)
   fetch(`https://functions-test-two.vercel.app/api/goodbye`)
-  res.end()
+  setTimeout(() => {
+    res.end()
+  }, 1000)
   
 }
