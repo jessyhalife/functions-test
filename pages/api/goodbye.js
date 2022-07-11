@@ -1,8 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default function handler(req, res) {
-  res.status(200)
-  fetch(`${process.env.VERCEL_URL}/api/goodbye`)
-  res.end()
+    console.log("hola")
+    setTimeout(() => {
+        res.status(401).json({ status: "goodbye"})
+    }, 6000)
+  }
   
-}
