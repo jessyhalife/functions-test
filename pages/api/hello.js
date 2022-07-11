@@ -4,7 +4,7 @@ export default function handler(req, res) {
   
   const timestamp = +new Date()
   console.log("hello from hello", timestamp)
-  fetch(`http://localhost:3001/api/goodbye`, {
+  fetch(`https://functions-test-two.vercel.app/api/goodbye`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
