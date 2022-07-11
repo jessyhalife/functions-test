@@ -13,6 +13,6 @@ export default async function handler(req, res) {
 
 const test = async () => {
   setTimeout(() => {
-    console.log("my execution")
+    console.log("my execution async")
   }, 10000)
 }
