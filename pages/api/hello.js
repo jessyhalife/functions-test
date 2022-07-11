@@ -2,8 +2,7 @@
 
 export default function handler(req, res) {
   res.status(200)
-  console.log(process.env.VERCEL_URL)
-  fetch(`https://${process.env.VERCEL_URL}/api/goodbye`)
+  fetch(`https://functions-test-two.vercel.app/api/goodbye`)
   res.end()
   
 }
