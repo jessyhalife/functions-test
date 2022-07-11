@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   console.log("hello from hello", timestamp)
   res.statusCode = 200
   res.end()
-  console.log("Start async")
+  console.log("Start async and see how it goes")
   await test()
 
 }
