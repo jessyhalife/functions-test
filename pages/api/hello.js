@@ -4,7 +4,7 @@ import Mergent from 'mergent'
 // could be some API route / getServerSideProps / ...
 async function handler (req, res)  {
     const mergent = new Mergent("A4XaV2S3GQbxnQvVswCC");
-    mergent.tasks
+    const task = await mergent.tasks
     .create({
       request: {
         headers: { "Content-Type": "application/json" }, // Optional
@@ -16,8 +16,7 @@ async function handler (req, res)  {
       },
       delay: "PT5S"
     })
-    .then((task) => console.log(task))
-    .catch((error) => console.error(error));
+   console.log({task})
   res.status(200).send("");
 }
 export default handler
