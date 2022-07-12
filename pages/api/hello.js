@@ -8,7 +8,7 @@ async function handler (req, res)  {
     .create({
       request: {
         headers: { "Content-Type": "application/json" }, // Optional
-        url: "https://functions-test-two.vercel.app/api/goodbye",
+        url: "https://functions-test-two.vercel.app/api/queues/email",
         body: JSON.stringify({
             name: "John Doe",
             age: "42"
