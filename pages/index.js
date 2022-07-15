@@ -31,7 +31,7 @@ export default function Home() {
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
-
+      <h1>HOLA MAIN</h1>
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
